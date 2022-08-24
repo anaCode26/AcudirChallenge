@@ -26,11 +26,5 @@ export default {
       return this.$store.state.historics
     }
   }
-  // props: {
-  //   historics: {
-  //     type: Array,
-  //     required: true
-  //   }
-  // }
 }
 </script>
