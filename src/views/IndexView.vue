@@ -9,7 +9,9 @@
       <v-tab-item :key="1" value="activity">
         <AActivity :activity="activity" />
     <div class="pt-6">
-      <AButton :loading="isLoading" @click="getActivity"/>
+      <AButton :loading="isLoading" @click="getActivity" block>
+        Get random activity
+      </AButton>
     </div>
       </v-tab-item>
       <v-tab-item :key="2" value="historic">
@@ -37,9 +39,6 @@ export default {
       activity: {},
       isLoading: false
     }
-  },
-  created(){
-    console.log(this.$store)
   },
   methods: {
     getActivity(){
